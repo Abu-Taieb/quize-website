@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que & Ans</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                common: ["Rubik", "sans-serif"],
+              },
+            },
+          },
+        };
+      </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mx-auto py-5">
+        <h1 class="text-white font-bold text-5xl text-center">Welcome to our Blog</h1>
+    </header>
+    <main>
+        <section class="w-8/12 mx-auto">
+            <!-- Accordion -->
+                <div class="">
+                    <div tabindex="0" class="collapse group collapse-plus border border-base-300 bg-base-100 rounded">
+                        <div class="collapse-title text-xl bg-primary text-primary-content group-focus:bg-secondary group-focus:text-secondary-content">
+                          What is the difference between <code class="font-bold text-green-300">filter()</code> , <code class="font-bold text-green-300">find()</code>, <code class="font-bold text-green-300">map()</code> & <code class="font-bold text-green-300">forEach()</code>
+                        </div>
+                        <div class="collapse-content bg-primary text-primary-content group-focus:bg-secondary group-focus:text-secondary-content"> 
+                            <p>1. Description of <code>filter()</code> : If I want to take a number value from an array, the filter will give me as many values ​​of the number as are the same inside that array. Exm: array = [3, 5, 8, 3, 6, 9]; return [3, 3] </p><br>
+                            <p>2. Description of <code>find()</code> : If I want to take a number value from an array, the find will give me a first matching value ​​of the number as are the same inside that array. Exm: array = [3, 5, 8, 3, 6, 9]; return [3] </p><br>
+                            <p>3. Description of <code>map()</code> : map() is used to transform each element in an array. Exm: array = [3, 5, 8, 3, 6, 9]; array.map() return [3, 5, 8, 3, 6, 9]</p><br>
+                            <p>4. Description of <code>forEach()</code> : forEach() is used to perform a certain operation on each element in an array. Exm: array = [3, 5, 8, 3, 6, 9];
+                                array.forEach() but no return data.</p>
+                        </div>
+                      </div>
+                    
+                </div>
+        </section>
+    </main>
+</body>
+</html>
